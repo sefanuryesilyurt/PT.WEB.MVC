@@ -54,11 +54,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="IdentyModel\ApplicationRole.cs" />
+    <Compile Include="IdentyModel\ApplicationUser.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\Laborlog.cs" />
+    <Compile Include="Model\SalaryLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
