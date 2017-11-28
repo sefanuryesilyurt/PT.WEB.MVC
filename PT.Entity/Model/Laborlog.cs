@@ -17,7 +17,7 @@ namespace PT.Entity.Model
         public DateTime? EndShift { get; set; }//boş olmaması için ? 
         public string UserId { get; set; }
         [ForeignKey("UserId")]
-        public virtual ApplicationUser User { get; set; }
 
+        public virtual ApplicationUser User { get; set; }
     }
 }

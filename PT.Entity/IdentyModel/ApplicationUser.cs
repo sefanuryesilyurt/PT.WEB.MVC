@@ -18,14 +18,14 @@ namespace PT.Entity.IdentyModel
         [StringLength(35)]
 
         public string Surname { get; set; }
-        [Column(TypeName = "smalldatetiime")]
+        [Column(TypeName = "smalldatetime")]
         public DateTime RegisterDate { get; set; } = DateTime.Now;
-
+        public decimal Salary { get; set; }
+        public int? DepartmanId { get; set; }
+        public string ActivationCode { get; set; }
         [ForeignKey("DepartmanId")]
         public virtual Department Department { get; set; }
 
-
-        public virtual Department Departman{ get; set; }
         public virtual List<Laborlog> Laborlog { get; set; } = new List<Model.Laborlog>();
 
         public virtual List<SalaryLog> SalaryLog { get; set; } = new List<Model.SalaryLog>();

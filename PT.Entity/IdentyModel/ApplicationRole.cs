@@ -11,8 +11,6 @@ namespace PT.Entity.IdentyModel
   public   class ApplicationRole:IdentityRole
     {
         [StringLength(200)]
-
-
         public string Description { get; set; }
 
     }

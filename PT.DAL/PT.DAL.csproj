@@ -75,6 +75,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Migrations\201711281236386_a2.cs" />
+    <Compile Include="Migrations\201711281236386_a2.Designer.cs">
+      <DependentUpon>201711281236386_a2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711281442067_uc.cs" />
+    <Compile Include="Migrations\201711281442067_uc.Designer.cs">
+      <DependentUpon>201711281442067_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,6 +99,14 @@
       <Project>{511b4df7-baf3-4d7e-972f-cd5ccfa823f4}</Project>
       <Name>PT.Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711281236386_a2.resx">
+      <DependentUpon>201711281236386_a2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711281442067_uc.resx">
+      <DependentUpon>201711281442067_uc.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

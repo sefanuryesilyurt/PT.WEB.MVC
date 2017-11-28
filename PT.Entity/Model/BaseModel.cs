@@ -15,7 +15,7 @@ namespace PT.Entity.Model
         public int Id { get; set; }
         public bool IsActive { get; set; }
 
-        [Column(TypeName = "smalldatetiime")]
+        [Column(TypeName = "smalldatetime")]
         public DateTime CreationDate { get; set; } = DateTime.Now;
     }
 }
