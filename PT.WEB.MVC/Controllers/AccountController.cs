@@ -343,6 +343,7 @@ namespace PT.WEB.MVC.Controllers
             if (model.PasswordModel.NewPassword!=model.PasswordModel.NewPasswordConfirm)
             {
                 ModelState.AddModelError(string.Empty, "Şifreler uyuşmuyor");
+
                 return View("Profile",model);
 
             }
