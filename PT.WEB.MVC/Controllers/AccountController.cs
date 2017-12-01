@@ -370,6 +370,9 @@ namespace PT.WEB.MVC.Controllers
             }
             catch (Exception ex)
             {
+
+                
+
                 ViewBag.sonuc = "Güncelleştirme işleminde bir hatav oluştu" + ex.Message;
                 return View("Profile",model);
             }
