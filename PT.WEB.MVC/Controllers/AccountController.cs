@@ -351,6 +351,7 @@ namespace PT.WEB.MVC.Controllers
             try
             {
                 var userStore = MemberschipTools.NewUserStore();
+
                 var userManager = new UserManager<ApplicationUser>(userStore);
                 var user = userManager.FindById(model.ProfileModel.Id);
                 user = userManager.Find(user.UserName, model.ProfileModel.UserName);
