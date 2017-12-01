@@ -21,6 +21,37 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li>
+
+                        <a href="@Url.Action("Index","Home")"> AnaSayfa</a>
+                    </li>
+                    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                    {
+                        <li>
+
+                            <a href="@Url.Action("Logout","Account")"> Çıkış yap</a>
+                        </li>
+
+                    }
+                    else
+                    {
+                    <li>
+
+                        <a href="@Url.Action("Login","Account")">Giriş yap</a>
+                    </li>
+
+                    }
+                    @if (HttpContext.Current.User.IsInRole("Admin"))
+
+                    {
+                        <li>
+                            <a href="@Url.Action("Index","Admin")"> Yönetici paneli </a>
+
+                        </li>
+                    }
+
+
+
                 </ul>
             </div>
         </div>
